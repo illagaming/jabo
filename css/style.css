@@ -1,11 +1,178 @@
+:root {
+  --clr-light: #fff;
+  --clr-dark: #333;
+  --clr-primary: #dbffa2;
+  --clr-secondary: #c3fcf2;
+  --clr-accent: #ff7750;
+
+  --foreground: var(--clr-dark);
+  --background: var(--clr-light);
+  transition-duration: 800ms; 
+}
+
+.darkmode {
+  --clr-light: #fff;
+  --clr-dark: #333;
+  --clr-primary: #202302;
+  --clr-secondary: #00100d;
+  --clr-accent: #ff7750;
+
+  --foreground: var(--clr-light);
+  --background: var(--clr-dark);
+  transition-duration: 200ms;  
+}
+
+.darkmode .navbar-default{
+  color:#fff ;
+  background: #333;
+  transition-duration: 200ms; 
+}
+
+.darkmode a {
+  text-decoration: none;
+  color: #fff !important;  
+  transition-duration: 200ms; 
+}
+
+.darkmode .btn-toggle{
+  background: #fff !important;
+  color:#333;
+  transition-duration: 200ms; 
+}
+
+.darkmode p {  
+  color:#fff;
+  transition-duration: 200ms; 
+}
+
+.darkmode h1 {  
+  color:#fff;
+  transition-duration: 200ms; 
+}
+
+.darkmode h3 {  
+  color:#fff;
+  transition-duration: 200ms; 
+}
+
+.darkmode i {  
+  color:#fff;
+  transition-duration: 200ms; 
+}
+
+.darkmode .navbar-default .navbar-nav > li a:hover {
+    color: #fff;
+}
 
 body {
-		background: #ffffff;
+		background: var(--background);
+    color: var(--foreground);
     font-family: 'Work Sans', sans-serif;
     font-style: normal;
 		font-weight: 300;
     overflow-x: hidden;
 }
+
+.btn-toggle{  
+  top:15px;
+  right:15px;
+  width:140px;
+  height:40px;
+  border-radius:6px;
+  background:#333;
+  color:#333;
+  border:1px solid #fff;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  cursor:pointer;  
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+/*@media (prefers-color-scheme: light){
+  body {
+    background-color: #fff;
+    color:#333;
+  }
+  .navbar-default {
+    background: #fff;
+    padding: 18px 0;
+    border: none;
+    margin-top: 62px;
+  }
+  a{
+    text-decoration: none;
+    color: black; 
+  }
+}
+
+@media (prefers-color-scheme: dark){
+  body {
+    background-color: #333;
+    color:#fff;
+  }
+  .navbar-default {
+    background: #333;
+    padding: 18px 0;
+    border: none;
+    margin-top: 62px;
+  }
+  a{
+    text-decoration: none;
+    color: white; 
+  } 
+}*/
+
+
+
+/*body.light{
+  color:#333 !important;
+  background: #fff; 
+  transition-duration: 800ms; 
+}
+
+body.light .navbar-default{
+  color:#333;
+  background: #fff;  
+  transition-duration: 800ms; 
+}
+
+body.light .btn-toggle{
+  color:#fff !important;
+  background: #333;
+  transition-duration: 800ms; 
+}
+
+body.light a {
+  text-decoration: none;
+  color: black;   
+  transition-duration: 800ms; 
+}
+
+body.dark{
+  color:#fff ;
+  background: #333;
+  transition-duration: 800ms;   
+}
+
+body.dark .navbar-default{
+  color:#fff ;
+  background: #333;
+  transition-duration: 800ms; 
+}
+
+body.dark .btn-toggle{
+  background: #fff !important;
+  color:#333;
+  transition-duration: 800ms; 
+}
+
+body.dark a {
+  text-decoration: none;
+  color: #fff;  
+  transition-duration: 800ms; 
+}*/
 
 
 /*---------------------------------------
@@ -66,15 +233,14 @@ html{
   -webkit-font-smoothing: antialiased;
 }
 
-a {
-  color: #4d638c;
+a {  
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
   text-decoration: none !important;
 }
 a:hover, a:active, a:focus {
-  color: #4d638c;
+  color: red;
   outline: none;
 }
 
@@ -171,6 +337,18 @@ a:hover, a:active, a:focus {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg); } }
 
+a{
+    text-decoration: none;
+    color: black; 
+  }
+
+.space{
+  padding-bottom: 80px; 
+}
+
+.space2{
+  padding-bottom: 40px;
+}
 
 
 /*---------------------------------------
@@ -178,14 +356,14 @@ a:hover, a:active, a:focus {
 -----------------------------------------*/
 
 .navbar-default {
-    background: #ffffff;
+    background: #fff;
     padding: 18px 0;
     border: none;
     margin-top: 62px;
-}
+  }
 
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
-  border-color: transparent;
+  border-color: transparent;  
 }
 
 .navbar-default .navbar-brand {
@@ -208,7 +386,7 @@ a:hover, a:active, a:focus {
 }
 
 .navbar-default .navbar-nav > li a:hover {
-    color: #333 !important;
+    color: #333;
 }
 
 .navbar-default .navbar-nav > li > a:hover,
@@ -726,9 +904,6 @@ footer .footer-copyright {
   width:25%;
 }
 
-a{
-    text-decoration: none;
-    color: black; 
-}
+
 
 
