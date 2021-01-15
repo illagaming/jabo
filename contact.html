@@ -22,6 +22,9 @@
 <body class="light">
 
 <!-- Navigation section  -->
+<div class="night">
+     <button class="btn-toggle" id="dark-mode-toggle">🌙</button>
+</div>  
 
 <div class="navbar navbar-default navbar-static-top" role="navigation">
      <div class="container">
@@ -52,8 +55,7 @@
 
 <section id="contact">
      <div class="container">
-          <div class="row">
-               <button class="btn-toggle" id="dark-mode-toggle">🌙</button>  
+          <div class="row">                
                <div class="col-md-offset-1 col-md-10 col-sm-12">
                     <div class="section-title">
                          <h2>Contact</h2>
@@ -62,16 +64,16 @@
 
                     <form action="#" method="post">
                          <div class="col-md-6 col-sm-6">
-                              <input type="text" class="form-control" placeholder="Nom" required>
+                              <input type="text" id="place" class="form-control" placeholder="Nom" required>
                          </div>
                          <div class="col-md-6 col-sm-6">
-                              <input type="email" class="form-control" placeholder="Email" required>
+                              <input type="email" id="place" class="form-control" placeholder="Email" required>
                          </div>
                          <div class="col-md-6 col-sm-6">
-                              <input type="telephone" class="form-control" placeholder="Numéro de téléphone" required>
+                              <input type="telephone" id="place" class="form-control text_color" placeholder="Numéro de téléphone" required>
                          </div>                         
                          <div class="col-md-12 col-sm-12"> 
-                              <textarea class="form-control" rows="5" placeholder="Décrivez la situation" required></textarea>
+                              <textarea class="form-control" id="place" rows="5" placeholder="Décrivez la situation" required></textarea>
                          </div>
                          <div class="col-md-3 col-sm-4">
                               <input type="submit" class="form-control" value="Envoyer">
