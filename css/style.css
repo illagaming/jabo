@@ -10,6 +10,10 @@
   transition-duration: 800ms; 
 }
 
+.link-a {
+  color:red;
+}
+
 .darkmode {
   --clr-light: #fff;
   --clr-dark: #333;
@@ -67,6 +71,11 @@
 .darkmode .navbar-default .navbar-nav > li a:hover {
     color: #fff;
 }
+
+.darkmode .link-a {
+  color:red !important;
+}
+
 
 body {
 	background: var(--background);
@@ -364,12 +373,12 @@ a{
 
 .navbar-default .navbar-nav li a {
     color: #777;
-    font-size: 16px;
+    font-size: 18px;
     letter-spacing: 1px;
     -webkit-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
-    padding-right: 22px;
-    padding-left: 22px;
+    padding-right: 40px;
+    padding-left: 16px;
 }
 
 .navbar-default .navbar-nav > li a:hover {
@@ -940,6 +949,7 @@ footer .footer-copyright {
   #img3 {
   width: 10%;
   }
+
 }
 
 @media screen and (max-width: 600px){
