@@ -7,6 +7,7 @@ let img = document.getElementById('img3');
 let img2 = document.getElementById('img');
 
 
+
 let darkMode = localStorage.getItem('darkMode'); 
 
 const btnToggle = document.querySelector('.btn-toggle');
@@ -35,7 +36,8 @@ if (darkMode === 'enabled') {
   var body = document.body;
 	if(body.classList.contains('dark')){			
 		img.src = 'img/Blanc_petit.png';
-		img2.src = 'img/Blanc_petit.png';		
+		img2.src = 'img/Blanc_petit.png';
+			
 	} 
 }
 
@@ -57,13 +59,13 @@ darkModeToggle.addEventListener('click', () => {
 		body.classList.add('light')
 		body.classList.remove('dark')	
 		img.src = 'img/Noir_petit.png';
-		img2.src = 'img/Blanc_petit.png';		
+		img2.src = 'img/Noir_petit.png';				
 		btnToggle.innerHTML = "🌙"
 	} else if(body.classList.contains('light')){	
 		body.classList.add('dark')
 		body.classList.remove('light')	
 		img.src = 'img/Blanc_petit.png';
-		img2.src = 'img/Blanc_petit.png';			
+		img2.src = 'img/Blanc_petit.png';						
 		btnToggle.innerHTML = "☀️"	
 	}
 });
@@ -72,6 +74,6 @@ var body = document.body;
 
 	if(body.classList.contains('dark')){		
 		img.src = 'img/Blanc_petit.png';
-		img2.src = 'img/Blanc_petit.png';		
+		img2.src = 'img/Blanc_petit.png';					
 	}
 	
