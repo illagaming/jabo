@@ -899,14 +899,20 @@ footer .footer-copyright {
 
 @media screen {
   .night {
-  margin-top:60px;
-  margin-left: 85%;
-  margin-right: 10px;
+  padding:10%;
+  }
+  .button_accueil{
+  float:right;
+  }
+  .logo {
+  z-index: 1;   
+  width: 10%;
+  float:left;
   }
   .btn-toggle{  
   top:15px;
   right:15px;
-  width:140px;
+  width:100px;
   height:40px;
   border-radius:6px;
   background:#333;
@@ -917,7 +923,15 @@ footer .footer-copyright {
   align-items:center;
   cursor:pointer;  
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 20px;  
+  margin-top: 2%;
+  }
+  #tel{
+    margin-top: 4%; 
+    float:left;   
+  }
+  #Adresse{
+    margin-top: 1%;
   }
   #img3 {
   width: 10%;
@@ -933,7 +947,7 @@ footer .footer-copyright {
   .btn-toggle{  
   top:15px;
   right:15px;
-  width:140px;
+  width:100px;
   height:40px;
   border-radius:6px;
   background:#333;
@@ -944,12 +958,32 @@ footer .footer-copyright {
   align-items:center;
   cursor:pointer;  
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 20px;  
+  margin-top: 2%;
+  }
+  #tel{    
+    float:left;
   }
   #img3 {
   width: 10%;
   }
 
+}
+
+@media screen and (max-width: 991px){
+  .btn-toggle{ 
+    margin-left: 3%;
+  }
+  #tel{
+    float: none;
+  }
+}
+
+@media screen and (max-width: 767px){  
+  .btn-toggle{ 
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media screen and (max-width: 600px){
@@ -964,7 +998,7 @@ footer .footer-copyright {
   .btn-toggle{  
   top:15px;
   right:15px;
-  width:110px;
+  width:100px;
   height:30px;
   border-radius:6px;
   background:#333;
@@ -976,6 +1010,9 @@ footer .footer-copyright {
   cursor:pointer;  
   margin: 0 auto;
   margin-bottom: 20px;
+  }
+  #tel{
+    float: none;
   }
   #img3 {
   width: 20%;
@@ -1017,4 +1054,5 @@ footer .footer-copyright {
 .border {
   border-radius: 4px;
 }
+
 
